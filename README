@@ -1,0 +1,9 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1372
+
+This script is designed to give LDAP access from within VIM using a Python script.  I developed this script to retrieve email addresses from a Microsoft Exchange server using an Active Directory for usernames, but the script should be easily used with any LDAP server.  In my never-ending quest to never again use MS Windows, I use mutt to read mail and vim to write new messages.  This led to the inevitable problem of looking up people's email addresses without opening Outlook, which led me to writing this script.
+
+The script maps the key ^F for insert mode only.  Typing in a person's username followed by ^F will retrieve their email address from the LDAP server and place the first result found in place of the username searched for.
+
+The script must be setup with the appropriate server, search base, and (if needed) username/password before use.  See comments within the script for setup details.
+
+Note that this script is not generic, I wrote it to fulfill my need and am providing it here simply so that anyone else who needs a similar capability has an example of how to start.
